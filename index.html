@@ -109,9 +109,9 @@
         .addEventListener("change", function () {
           var navSelectMobile = document.querySelector(".nav_select_mobile");
           if (this.checked) {
-            navSelectMobile.style.display = "block";
+            navSelectMobile.style.left = "0"; // 将 .nav_select_mobile 移动到屏幕左侧
           } else {
-            navSelectMobile.style.display = "none";
+            navSelectMobile.style.left = "-100%"; // 将 .nav_select_mobile 移动到屏幕左侧之外
           }
         });
     </script>
