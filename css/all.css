@@ -35,6 +35,7 @@ img {
 }
 body {
   max-width: 1920px;
+  width: 100%;
   background-color: #eff3f6;
   background: url(../img/all/body_backImg.svg);
   background-repeat: no-repeat;
@@ -45,131 +46,213 @@ body {
   display: flex;
   width: 100%;
 }
-/*#region nav*/
+
+/*#region nav_mobile*/
 .nav_group {
-  box-sizing: border-box;
-  max-width: 330px;
-  width: 100%;
-  position: relative;
+  display: none;
 }
-.nav_backImg {
-  position: absolute;
-  margin-left: 27px;
+
+/*#endregion nav_mobile*/
+/*#region nav_min768*/
+@media screen and (min-width: 768px) {
 }
-.nav_control {
-  box-sizing: border-box;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  max-width: 330px;
-  margin-top: -850px;
-  margin-left: 30px;
+/*#endregion nav_min768*/
+/*#region nav_min1024*/
+@media screen and (min-width: 1024px) {
 }
-.logo_img {
-  margin: 0 0 100px 0;
-  width: 100%;
+/*#endregion nav_min1024*/
+/*#region nav_min1200*/
+@media screen and (min-width: 1200px) {
+  .nav_group {
+    display: block;
+    box-sizing: border-box;
+    max-width: 330px;
+    width: 100%;
+    position: relative;
+  }
+  .nav_backImg {
+    position: absolute;
+    margin-left: 27px;
+  }
+  .nav_control {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    margin-top: -850px;
+    margin-left: 30px;
+  }
+  .logo_img {
+    margin: 0 0 100px 0;
+    width: 100%;
+  }
+  .logo_img > a {
+    display: block;
+    width: 140px;
+    margin: auto;
+  }
+  .custom_btn {
+    width: 180px;
+    height: 50px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    text-decoration: none;
+  }
+  .info_text,
+  .personal_text,
+  .competition_text,
+  .together_text,
+  .cookbook_text,
+  .sportmenu_text {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+  }
+  .info_btn,
+  .personal_btn,
+  .competition_btn,
+  .together_btn,
+  .cookbook_btn,
+  .sportmenu_btn {
+    background: transparent;
+    z-index: 1;
+  }
+  .info_btn h3,
+  .personal_btn h3,
+  .competition_btn h3,
+  .together_btn h3,
+  .cookbook_btn h3,
+  .sportmenu_btn h3 {
+    margin: 0 0 0 10px;
+  }
+  .info_btn :after,
+  .personal_btn :after,
+  .competition_btn :after,
+  .together_btn :after,
+  .cookbook_btn :after,
+  .sportmenu_btn :after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .info_btn :hover,
+  .personal_btn :hover,
+  .competition_btn :hover,
+  .together_btn :hover,
+  .cookbook_btn :hover,
+  .sportmenu_btn :hover {
+    color: #6ec1c5;
+  }
+  .info_btn :hover:after,
+  .personal_btn :hover:after,
+  .competition_btn :hover:after,
+  .together_btn :hover:after,
+  .cookbook_btn :hover:after,
+  .sportmenu_btn :hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .info_btn:active,
+  .personal_btn:active,
+  .competition_btn:active,
+  .together_btn:active,
+  .cookbook_btn:active,
+  .sportmenu_btn :active {
+    top: 2px;
+  }
 }
-.logo_img > a {
-  display: block;
-  width: 140px;
-  margin: auto;
-}
-.custom_btn {
-  width: 180px;
-  height: 50px;
-  margin: 10px 0;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  position: relative;
-  text-decoration: none;
-}
-.info_text,
-.personal_text,
-.competition_text,
-.together_text,
-.cookbook_text,
-.sportmenu_text {
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  color: white;
-}
-.info_btn,
-.personal_btn,
-.competition_btn,
-.together_btn,
-.cookbook_btn,
-.sportmenu_btn {
-  background: transparent;
-  z-index: 1;
-}
-.info_btn h3,
-.personal_btn h3,
-.competition_btn h3,
-.together_btn h3,
-.cookbook_btn h3,
-.sportmenu_btn h3 {
-  margin: 0 0 0 10px;
-}
-.info_btn :after,
-.personal_btn :after,
-.competition_btn :after,
-.together_btn :after,
-.cookbook_btn :after,
-.sportmenu_btn :after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #ffffff;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-.info_btn :hover,
-.personal_btn :hover,
-.competition_btn :hover,
-.together_btn :hover,
-.cookbook_btn :hover,
-.sportmenu_btn :hover {
-  color: #6ec1c5;
-}
-.info_btn :hover:after,
-.personal_btn :hover:after,
-.competition_btn :hover:after,
-.together_btn :hover:after,
-.cookbook_btn :hover:after,
-.sportmenu_btn :hover:after {
-  left: 0;
-  width: 100%;
-}
-.info_btn:active,
-.personal_btn:active,
-.competition_btn:active,
-.together_btn:active,
-.cookbook_btn:active,
-.sportmenu_btn :active {
-  top: 2px;
-}
-/*#endregion nav*/
+/*#endregion nav_min1200*/
 .main {
   max-width: 1590px;
   width: 100%;
   box-sizing: border-box;
 }
-/*#region header*/
+/*#region header_mobile*/
+.nav_mobile {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  height: 120px;
+  align-items: center;
+}
+.nav_logo_mobile img{
+width: 70%;
+margin: 0 20px;
+}
+.nav_hb_mobile{
+  margin: 0 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+.nav_hb_mobile span{
+  width: 84%;
+  height: 3px;
+  background-color: #ffffff;
+}
+.nav_select_mobile{
+  display: none;
+  position: absolute;
+  width: 96%;
+  background-color: #6ec1c5;
+  left: 0;
+  top: 100%;
+}
+#nav_menu_switch{
+  display: none;
+}
+#nav_menu_switch:checked + .nav_mobile .nav_select_mobile {
+  display: block;
+}
+.nav_select_mobile a{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav_select_mobile a + a{
+  border-top: 0.5px solid #fff;
+}
+@media screen and (min-width:1200px){
+.nav_mobile{
+  display: none;
+}
+}
+
+
+
+
+
+
 header {
   width: 100%;
-  height: 65px;
+  height: 120px;
+  background-color: #6ec1c5;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   position: sticky;
   top: 0px;
-  z-index: 100;
+  z-index: 98;
 }
 .header_group {
   box-sizing: border-box;
@@ -203,15 +286,10 @@ header {
   border-radius: 0 0 10px 10px;
 }
 .login_Bgc {
-  background-color: #6ec1c5;
-  width: 75px;
-  height: 65px;
+  display: none;
 }
 .login_btn img {
   font-size: 30px;
-  position: absolute;
-  margin-top: -50px;
-  margin-left: 18px;
 }
 .setting_btn .fa-gear {
   color: #6ec1c5;
@@ -246,6 +324,108 @@ header {
 .login_btn:hover {
   color: #0b3638;
 }
+/*#endregion header_mobile*/
+/*#region header_min768*/
+@media screen and (min-width: 768px) {
+}
+/*#endregion header_min768*/
+/*#region header_min1024*/
+@media screen and (min-width: 1024px) {
+}
+/*#endregion header_min1024*/
+/*#region header_min1200*/
+@media screen and (min-width: 1200px) {
+  header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: transparent;
+  }
+  .header_group {
+    box-sizing: border-box;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 0 20px;
+  }
+  .header_group i {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+  .header_group button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .setting_btn i {
+    margin-left: 2px;
+    margin-top: 11px;
+  }
+  .login_btn {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+  }
+  .login_Bgc {
+    display: block;
+    background-color: #6ec1c5;
+    width: 75px;
+    height: 65px;
+  }
+  .login_btn img {
+    font-size: 30px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 18px;
+  }
+  .setting_btn .fa-gear {
+    color: #6ec1c5;
+  }
+  .systemInfo_btn .fa-bell {
+    color: #6ec1c5;
+  }
+  .message_btn .fa-comment-dots {
+    color: #6ec1c5;
+  }
+  .login_btn .fa-circle-user {
+    color: #ffffff;
+  }
+  .systemInfo_btn:hover,
+  .setting_btn:hover,
+  .message_btn:hover {
+    background-color: #6ec1c5;
+  }
+  .login_btn:hover .b_Login_Bg {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  .message_btn:hover .fa-comment-dots {
+    color: #fff;
+  }
+  .systemInfo_btn:hover .fa-bell {
+    color: #fff;
+  }
+  .setting_btn:hover .fa-gear {
+    color: #fff;
+  }
+  .login_btn:hover {
+    color: #0b3638;
+  }
+}
+/*#endregion header_min1200*/
+/*#region info*/
 
-
-/*#endregion header*/
+/*#endregion info*/
+/*#region aside*/
+/*#endregion aside*/
