@@ -66,22 +66,22 @@ body {
   .nav_group {
     display: block;
     box-sizing: border-box;
-    max-width: 330px;
+    max-width: 280px;
     width: 100%;
     position: relative;
   }
   .nav_backImg {
     position: absolute;
-    margin-left: 27px;
+    margin-left: 34px;
   }
   .nav_control {
     box-sizing: border-box;
     position: absolute;
     display: flex;
     flex-direction: column;
-    max-width: 330px;
+    max-width: 280px;
     margin-top: -850px;
-    margin-left: 30px;
+    margin-left: 34px;
   }
   .logo_img {
     margin: 0 0 100px 0;
@@ -176,7 +176,7 @@ body {
 }
 /*#endregion nav_min1200*/
 .main {
-  max-width: 1590px;
+  max-width: 1640px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -381,5 +381,4 @@ header {
 /*#region info*/
 
 /*#endregion info*/
-/*#region aside*/
-/*#endregion aside*/
+
