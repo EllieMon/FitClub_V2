@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="visible_Range">
-      <aside class="nav_group">
+      <nav class="nav_group xl">
         <div class="nav_backImg">
           <img src="./img/all/nav_backImg.svg" alt="" />
           <div class="nav_control">
@@ -62,9 +62,28 @@
             </a>
           </div>
         </div>
-      </aside>
+      </nav>
       <main class="main">
         <header class="header">
+          <div class="nav_mobile">
+            <input type="checkbox" name="" id="nav_menu_switch" />
+            <label for="nav_menu_switch" class="nav_hb_mobile">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <div class="nav_logo_mobile">
+              <a href="#"><img src="./img/all/logo.svg" /></a>
+            </div>
+            <nav class="nav_select_mobile">
+              <a href="#">資訊總覽</a>
+              <a href="#">個人紀錄</a>
+              <a href="#">團隊競賽</a>
+              <a href="#">揪團動動</a>
+              <a href="#">健康食譜</a>
+              <a href="#">運動菜單</a>
+            </nav>
+          </div>
           <div class="header_group">
             <button class="message_btn shadow">
               <i class="fa-solid fa-comment-dots fa-lg"></i>
@@ -75,19 +94,44 @@
             <button class="setting_btn shadow">
               <i class="fa-solid fa-gear fa-lg"></i>
             </button>
-            <a href="#" class="login_btn shadow">
+            <a href="#" class="login_btn">
               <div class="login_Bgc"></div>
-              <img
-                src="./img/all/Sally_40_pic.png"
-                alt=""
-              />
+              <img src="./img/all/Sally_40_pic.png" alt="" />
             </a>
           </div>
         </header>
-        <div class="info"></div>
-        <aside class="aside"></aside>
+        <div class="info">
+          <div class="info_main">
+            <div class="info_personal">
+              <div class="personal_item">1</div>
+              <div class="personal_item">2</div>
+              <div class="personal_item">3</div>
+              <div class="personal_item">4</div>
+            </div>
+            <div class="info_together">
+              <div class="together_item">5</div>
+              <div class="together_item">6</div>
+            </div>
+          </div>
+          <div class="info_aside">
+            <div class="aside_personal_item">1</div>
+            <div class="aside_personal_item">2</div>
+          </div>
+        </div>
         <footer class="footer"></footer>
       </main>
     </div>
+    <script>
+      document
+        .getElementById("nav_menu_switch")
+        .addEventListener("change", function () {
+          var navSelectMobile = document.querySelector(".nav_select_mobile");
+          if (this.checked) {
+            navSelectMobile.style.left = "0"; // 將 .nav_select_mobile 移動到螢幕左側
+          } else {
+            navSelectMobile.style.left = "-100%"; // 將 .nav_select_mobile 移動到螢幕左側之外
+          }
+        });
+    </script>
   </body>
 </html>
