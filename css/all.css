@@ -52,17 +52,7 @@ body {
   display: none;
 }
 
-/*#endregion nav_mobile*/
-/*#region nav_min768*/
-@media screen and (min-width: 768px) {
-}
-/*#endregion nav_min768*/
-/*#region nav_min1024*/
-@media screen and (min-width: 1024px) {
-}
-/*#endregion nav_min1024*/
-/*#region nav_min1200*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .nav_group {
     display: block;
     box-sizing: border-box;
@@ -74,22 +64,25 @@ body {
     position: absolute;
     margin-left: 34px;
   }
+  .nav_backImg > img{
+    width: 100%;
+  }
   .nav_control {
     box-sizing: border-box;
     position: absolute;
     display: flex;
     flex-direction: column;
-    max-width: 280px;
+    max-width: 180px;
+    width: 100%;
     margin-top: -850px;
     margin-left: 34px;
   }
   .logo_img {
-    margin: 0 0 100px 0;
+    margin: 0 auto 100px ;
+    max-width: 180px;
     width: 100%;
   }
-  .logo_img > a {
-    display: block;
-    width: 140px;
+  .logo_img > a > img {
     margin: auto;
   }
   .custom_btn {
@@ -233,7 +226,7 @@ margin: 0 20px;
 .nav_select_mobile a + a{
   border-top: 0.5px solid #fff;
 }
-@media screen and (min-width:1200px){
+@media screen and (min-width:1280px){
 .nav_mobile{
   display: none;
 }
@@ -329,7 +322,7 @@ header {
 }
 /*#endregion header_min1024*/
 /*#region header_min1200*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   header {
     width: 100%;
     height: 65px;

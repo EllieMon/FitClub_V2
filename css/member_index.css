@@ -1,4 +1,4 @@
-/*#region info*/
+/*#region info_RWD*/
 .info {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -30,15 +30,14 @@
 }
 .aside_personal_item {
   box-sizing: border-box;
-  background-color: #ccc;
+  background-color: #fff;
   padding: 20px;
   text-align: center;
-  width: 100%;
   grid-column: span 2;
 }
 
 .info_personal {
-  max-width: 1040px;
+  /* max-width: 1040px; */
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -46,7 +45,7 @@
   margin: 0 0 20px 0;
 }
 .info_together {
-  max-width: 1040px;
+  /* max-width: 1040px; */
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -54,7 +53,8 @@
 }
 .personal_item,
 .together_item {
-  background-color: #ccc;
+  box-sizing: border-box;
+  background-color: #fff;
   padding: 20px;
   text-align: center;
   grid-column: span 12;
@@ -89,6 +89,35 @@
 }
 
 @media (min-width: 1280px) {
+  .info_main{
+    max-width: 1670px;
+    width: 100%;
+  }
+  .personal_item {
+    grid-column: span 3;
+  }
+  .together_item {
+    grid-column: span 6;
+  }
+  .info_aside {
+    order: -1;
+  }
+  .aside_personal_item {
+    grid-column: span 1;
+  }
+  .info_main {
+    grid-column: span 12;
+  }
+  .info_aside {
+    max-width: 1670px;
+    width: 100%;
+  }
+}
+@media (min-width: 1770px) {
+  .info_main{
+    max-width: 1040px;
+    width: 100%;
+  }
   .personal_item {
     grid-column: span 3;
   }
@@ -98,7 +127,6 @@
   .aside_personal_item {
     grid-column: span 2;
   }
-
   .info_main {
     grid-column: span 8;
   }
@@ -108,5 +136,8 @@
     width: 100%;
   }
 }
+/*#endregion info_RWD*/
+/*#region info*/
+
 
 /*#endregion info*/
