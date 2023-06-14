@@ -1,0 +1,492 @@
+/*#region md*/
+.md_group {
+  margin: 70px 10px 0;
+}
+.visual_slide {
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visual_slide_img {
+  text-align: center;
+}
+.visual_slide_img img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+.visual_title h1 {
+  margin: 0 0 150px 0;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .visual_title h1 {
+    margin: 0 0 100px 0;
+  }
+}
+/*#endregion md*/
+/*#region personal*/
+.personal {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 0px 50px 0;
+  margin: auto;
+}
+.personal_group {
+  margin: auto;
+  width: 80%;
+  justify-content: center;
+  display: grid;
+  grid-template: repeat(5, 0.25fr) / repeat(2, 1fr);
+  gap: 3px;
+}
+.personal_main {
+  display: none;
+}
+.personal_Title {
+  grid-area: 3/1/4/3;
+  padding: 0 20px;
+}
+.personal_Title_Group {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.personal_Title h2 {
+  line-height: 60px;
+  margin: 0 0 0 5px;
+}
+.personal_P {
+  grid-area: 4/1/5/3;
+  padding: 0 20px;
+  line-height: 26px;
+}
+.personal_Cal img,
+.personal_Sleep img,
+.personal_Step img,
+.personal_Sport img {
+  max-width: 155px;
+  width: 100%;
+  margin: auto;
+}
+.personal_Cal img,
+.personal_Sleep img {
+  margin: 0 auto 10px;
+}
+.personal_Decorate img {
+  display: none;
+}
+@media (min-width: 768px) {
+  .personal_group {
+    grid-template: repeat(2, 0.25fr) / repeat(4, 1fr);
+  }
+  .personal_Title {
+    grid-area: 2/1/3/3;
+  }
+  .personal_P {
+    grid-area: 2/3/3/5;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .personal {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 0px 250px 0;
+    margin: auto;
+  }
+  .personal_group {
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+    gap: 5px;
+  }
+  .personal_main {
+    display: block;
+    grid-area: 1/1/4/4;
+    position: relative;
+    margin: auto;
+  }
+  .personal_main img {
+    width: 100%;
+  }
+  .personal_main img,
+  .personal_Cal img,
+  .personal_Sleep img,
+  .personal_Step img,
+  .personal_Sport img {
+    width: 100%;
+  }
+  .personal_Decorate {
+    width: 30%;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: -40px;
+  }
+  .personal_Decorate img {
+    display: block;
+  }
+  .personal_Cal {
+    grid-area: 2/6/3/7;
+    margin: 8px;
+  }
+  .personal_Sleep {
+    grid-area: 3/4/4/5;
+    margin: 8px;
+  }
+  .personal_Step {
+    grid-area: 3/5/4/6;
+    margin: 8px;
+  }
+  .personal_Sport {
+    grid-area: 3/6/4/7;
+    margin: 8px;
+  }
+  .personal_Title {
+    grid-area: 1/4/2/7;
+    padding: 0 20px;
+    margin-top: auto;
+  }
+  .personal_Title_Group {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .personal_Title h2 {
+    line-height: 60px;
+    margin: 0 0 0 5px;
+  }
+  .personal_P {
+    grid-area: 2/4/3/6;
+    padding: 0 20px;
+    line-height: 26px;
+    margin-top: auto;
+  }
+}
+@media (min-width: 1280px) {
+  .personal_main img {
+    width: 100%;
+  }
+  .personal_Decorate {
+    margin-top: -205px;
+    margin-left: -55px;
+  }
+}
+/*#endregion personal*/
+/*#region competition*/
+.competition {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 0px 100px 0;
+}
+.competition_group {
+  margin: auto;
+  width: 80%;
+  justify-content: center;
+  display: grid;
+  grid-template: 1fr 0.2fr 0.25fr / repeat(1, 1fr);
+  gap: 5px;
+  position: relative;
+}
+.competition_main {
+  grid-area: 1/1/2/2;
+  margin: auto;
+}
+.competition_main img {
+  width: 100%;
+}
+.competition_decorate {
+  display: none;
+}
+.competition_title {
+  grid-area: 2/1/3/2;
+  padding: 0 20px;
+}
+.competition_title_group {
+  display: flex;
+  align-items: center;
+}
+.competition_title h2 {
+  line-height: 60px;
+  margin: 0 0 0 5px;
+}
+.competition_p {
+  grid-area: 3/1/4/2;
+  margin: auto;
+  padding: 0 20px;
+}
+@media (min-width: 1024px) {
+  .competition {
+    padding: 0px 0px 300px 0;
+  }
+  .competition_group {
+    grid-template: 0.8fr 1fr / repeat(2, 1fr);
+    gap: 5px;
+  }
+  .competition_main {
+    grid-area: 1/2/3/3;
+  }
+  .competition_decorate {
+    display: block;
+    position: absolute;
+    top: 375px;
+    left: 220px;
+  }
+  .competition_title {
+    grid-area: 1/1/2/2;
+    padding: 0 50px;
+  }
+  .competition_title_group {
+    height: 60px;
+    padding: 90px 0 0 0;
+  }
+  .competition_p {
+    grid-area: 2/1/3/2;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1280px) {
+  .competition_decorate {
+    top: 355px;
+    left: 160px;
+  }
+}
+/*#endregion competition*/
+/*#region together*/
+.together {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 0px 100px 0;
+}
+.together_group {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  display: grid;
+  grid-template: 0.5fr 1fr / repeat(2, 1fr);
+  gap: 5px;
+}
+.together_pic1 {
+  grid-area: 1/1/2/2;
+}
+.together_pic2 {
+  grid-area: 1/2/2/3;
+}
+.together_pic3 {
+  display: none;
+}
+.together_pic1 img,
+.together_pic2 img {
+  width: 100%;
+}
+.togetherGroup_text {
+  grid-area: 2/1/3/3;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0px auto;
+}
+.togetherGroup_title {
+  padding: 0 0 5px 0;
+}
+.togetherGroup_title_group {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.togetherGroup_title h2 {
+  margin: 0 0 0 5px;
+}
+@media (min-width: 1024px) {
+  .together {
+    padding: 0px 0px 300px 0;
+  }
+  .together_group {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 15px;
+  }
+  .together_pic1 {
+    grid-area: 1/1/2/2;
+  }
+  .together_pic2 {
+    grid-area: 2/1/3/2;
+  }
+  .together_pic3 {
+    display: block;
+    grid-area: 2/2/3/3;
+  }
+  .together_pic1 img,
+  .together_pic2 img,
+  .together_pic3 img {
+    width: 100%;
+  }
+  .togetherGroup_text {
+    grid-area: 1/2/2/3;
+    margin: auto;
+  }
+}
+/*#endregion together*/
+/*#region cook_sport*/
+.cook_sport {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 0px 100px 0;
+}
+.cook_sport_group {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  display: grid;
+  grid-template: repeat(3, 0.5fr) / repeat(2, 1fr);
+  gap: 5px;
+  position: relative;
+}
+.cook_sport_pic1 {
+  grid-area: 1/1/2/2;
+}
+.cook_sport_pic2 {
+  grid-area: 1/2/2/3;
+}
+.cook_sport_pic1 img,
+.cook_sport_pic2 img {
+  width: 100%;
+}
+.cook_sport_decorate1 {
+  display: none;
+}
+.cook_sport_decorate2 {
+  display: none;
+}
+.cook_sport_title {
+  grid-area: 2/1/3/3;
+  padding: 0 20px;
+}
+.cook_sport_title1,
+.cook_sport_title2 {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.cook_sport_p{
+  grid-area: 3/1/4/3;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+  .cook_sport {
+    padding: 0px 0px 250px 0;
+  }
+  .cook_sport_group {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 20px;
+  }
+  .cook_sport_pic1 {
+    grid-area: 1/2/2/3;
+    margin: auto;
+  }
+  .cook_sport_pic2 {
+    grid-area: 2/1/3/2;
+    margin: auto;
+  }
+  .cook_sport_decorate1 {
+    display: block;
+    grid-area: 1/1/2/2;
+    margin-top: auto;
+    margin-left: auto;
+  }
+  .cook_sport_decorate2 {
+    display: block;
+    grid-area: 2/2/3/3;
+    padding: 0 60px 0 0;
+    margin-top: auto;
+    margin-left: auto;
+  }
+  .cook_sport_title {
+    grid-area: 1/1/2/2;
+    padding: 0 150px 0 0;
+    margin: auto;
+  }
+  .cook_sport_title1,
+  .cook_sport_title2 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .cook_sport_p{
+    grid-area: 2/2/3/3;
+    padding: 30px 50px 0;
+  }
+}
+/*#endregion cook_sport*/
+/*#region joinus*/
+@media (max-width: 1024px) {
+  .joinus_decorate img{
+    width: 80%;
+    margin: auto;
+  }
+}
+.joinus {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 0px 50px 0;
+}
+.joinus_decorate {
+  width: 80%;
+  margin: auto;
+}
+.joinus_decorate img{
+  width: 80%;
+  margin: auto;
+}
+.joinus_text {
+  text-align: center;
+  padding: 20px;
+}
+.joinus_text img {
+  margin: auto;
+  padding: 20px;
+}
+.joinus_a {
+  width: 160px;
+  height: 40px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #6ec1c5;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+.joinus_a p{
+  font-size: 20px;
+}
+.joinus_a i {
+  line-height: 40px;
+  padding: 0 0 0 3px;
+}
+.joinus_a:hover {
+  background-color: #ffffff;
+}
+.joinus_a:hover p {
+  color: #6ec1c5;
+}
+/*#endregion joinus*/
+/*#region footer*/
+.footer {
+  margin: auto;
+  padding: 0 0 5px 0;
+}
+.footer p {
+  text-align: center;
+  font-size: 12px;
+  color: #706c65;
+}
+/*#endregion footer*/

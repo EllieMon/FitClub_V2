@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
         "sportmenu"
-    ]
+    ],
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+    "liveServer.settings.useWebExt": true,
 }
