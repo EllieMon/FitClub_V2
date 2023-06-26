@@ -31,6 +31,7 @@ img {
 body {
   max-width: 1920px;
   width: 100%;
+  margin: auto;
   font-family: "Noto Sans", "Noto Sans Traditional Chinese";
   background-color: #eff3f6;
   background-image: url(../img/all/body_backImg.svg);
@@ -84,7 +85,7 @@ body {
   }
   .logo_img > a > img {
     margin: auto;
-    width: 100%;
+    width: 80%;
   }
   .custom_btn {
     width: 180px;
@@ -278,7 +279,7 @@ header {
   display: none;
 }
 .login_btn img {
-  font-size: 30px;
+  width: 60px;
 }
 .setting_btn .fa-gear {
   color: #6ec1c5;
@@ -357,10 +358,9 @@ header {
     height: 65px;
   }
   .login_btn img {
-    font-size: 30px;
     position: absolute;
-    margin-top: -50px;
-    margin-left: 18px;
+    top: 4px;
+    left: 8px;
   }
 }
 /*#endregion header_min1200*/
